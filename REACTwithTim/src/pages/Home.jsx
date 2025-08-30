@@ -6,7 +6,7 @@ export default function Home(){
     const [searchQuery, setSearchQuery] = useState("")
     const movies =[ 
         { id: 1, title: "John Wick", release_date: "2020" },
-        { id: 2, title: "John Doe", release_date: "2025" },
+        { id: 2, title: "Doe nal", release_date: "2025" },
         { id: 3, title: "John Mow", release_date: "2030" }
     ]
 
@@ -28,7 +28,7 @@ export default function Home(){
                 <button type="submit" className="search-button">Search</button>
             </form>
             <div className="movies-grid">
-                 {movies.map(movie => <MovieCard movie={movie} key={movie.id}/> )}
+                {movies.map(movie => <MovieCard movie={movie} key={movie.id}/>)}
             </div>
         </div>
     )
