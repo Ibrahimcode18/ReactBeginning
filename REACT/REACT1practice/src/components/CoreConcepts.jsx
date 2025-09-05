@@ -1,13 +1,13 @@
 
 
-export default function CoreConcepts(){
+export default function CoreConcepts({image, title, content}){
 
 
     return(
         <div>
-            <img src="" />
-            <p>Title</p>
-            <p>contents</p>
+            <img src={image} />
+            <p>{title}</p>
+            <p>{content}</p>
         </div>
     )
 }
