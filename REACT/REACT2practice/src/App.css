@@ -14,12 +14,13 @@
 
 .board {
   height: 30em;
-  width: 25em;
+  width: 30em;
   background-color: #383624;
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 10em;
+  display: flex;
 }
 
 .card {
