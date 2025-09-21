@@ -1,0 +1,15 @@
+.form{
+    display: inline;
+    margin-right: 25px;
+}
+
+.save{
+    display: contents;
+}
+
+.letter{
+    display: inline;
+    color: aliceblue;
+    margin-left: 5px;
+    margin-right: 5px;
+}
