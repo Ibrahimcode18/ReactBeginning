@@ -23,18 +23,49 @@ function App() {
 
     // Switch player
     setActivePlayer((prev) => (prev === "X" ? "O" : "X"));
-
+    checkWinner()
   }
+
+  function checkWinner(){
+    if (initialBoard.some(item => item !== null)){
+      if ((initialBoard[0] === initialBoard[1]) && (initialBoard[1] === initialBoard[2])){
+        setBoard(Array(9).fill(null))
+      }
+      else if ((initialBoard[3] === initialBoard[4]) && (initialBoard[4] === initialBoard[5])){
+        setBoard(Array(9).fill(null))
+      }
+      else if ((initialBoard[6] === initialBoard[7]) && (initialBoard[7] === initialBoard[8])){
+        setBoard(Array(9).fill(null))
+      }
+      else if ((initialBoard[0] === initialBoard[3]) && (initialBoard[6] === initialBoard[6])){
+        setBoard(Array(9).fill(null))
+      }
+      else if ((initialBoard[1] === initialBoard[4]) && (initialBoard[4] === initialBoard[7])){
+        setBoard(Array(9).fill(null))
+      }
+      else if ((initialBoard[2] === initialBoard[5]) && (initialBoard[5] === initialBoard[8])){
+        setBoard(Array(9).fill(null))
+      }
+      else if ((initialBoard[0] === initialBoard[4]) && (initialBoard[4] === initialBoard[8])){
+        setBoard(Array(9).fill(null))
+      }
+      else if ((initialBoard[2] === initialBoard[4]) && (initialBoard[4] === initialBoard[6])){
+        setBoard(Array(9).fill(null))
+      }
+    }
+    }
+    
+
   return (
     <>
       <img src='/game-logo.png' className='logo' />
       <p>Tic-Tac-Toe</p>
       
       <div className='board'>
-        <div className='players'>
+        {/* <div className='players'>
           <Player player="Player1" letter="X"/>
           <Player player="Player2" letter="O"/>
-        </div>
+        </div> */}
 
         <div className='positions'>
           <div className='row1'>
