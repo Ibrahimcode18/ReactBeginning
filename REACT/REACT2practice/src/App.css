@@ -41,3 +41,14 @@
 .read-the-docs {
   color: #888;
 }
+
+.gameover{
+  background-color: #dac618d7;
+}
+.gameovertext{
+  color: #383624;
+}
+.replay{
+  background-color: darkgoldenrod;
+  color: #383624;
+}
